@@ -1,0 +1,208 @@
+# Herbalism Reborn - Crops Configuration
+# Defines all available crops and their properties
+
+# Crop definitions
+crops:
+  wheat:
+    name: "Wheat"
+    category: "Basic"
+    plant-material: "WHEAT"
+    harvest-material: "WHEAT"
+    seed-material: "WHEAT_SEEDS"
+    duration: 3600  # Growth time in seconds
+    sustainable: false
+    requirement:
+      level: 1
+      permission: "herbalism.crop.wheat"
+    drops:
+      - material: "WHEAT"
+        amount: 1
+        chance: 100.0
+        bonus-amount: 2
+        bonus-chance: 20.0
+      - material: "WHEAT_SEEDS"
+        amount: 1
+        chance: 50.0
+        bonus-amount: 1
+        bonus-chance: 10.0
+    
+  carrot:
+    name: "Carrot"
+    category: "Basic"
+    plant-material: "CARROTS"
+    harvest-material: "CARROT"
+    seed-material: "CARROT"
+    duration: 3600
+    sustainable: false
+    requirement:
+      level: 1
+      permission: "herbalism.crop.carrot"
+    drops:
+      - material: "CARROT"
+        amount: 1
+        chance: 100.0
+        bonus-amount: 2
+        bonus-chance: 25.0
+        
+  potato:
+    name: "Potato"
+    category: "Basic"
+    plant-material: "POTATOES"
+    harvest-material: "POTATO"
+    seed-material: "POTATO"
+    duration: 3600
+    sustainable: false
+    requirement:
+      level: 1
+      permission: "herbalism.crop.potato"
+    drops:
+      - material: "POTATO"
+        amount: 1
+        chance: 100.0
+        bonus-amount: 2
+        bonus-chance: 25.0
+      - material: "POISONOUS_POTATO"
+        amount: 1
+        chance: 2.0
+        
+  beetroot:
+    name: "Beetroot"
+    category: "Basic"
+    plant-material: "BEETROOTS"
+    harvest-material: "BEETROOT"
+    seed-material: "BEETROOT_SEEDS"
+    duration: 3600
+    sustainable: false
+    requirement:
+      level: 5
+      permission: "herbalism.crop.beetroot"
+    drops:
+      - material: "BEETROOT"
+        amount: 1
+        chance: 100.0
+        bonus-amount: 2
+        bonus-chance: 20.0
+      - material: "BEETROOT_SEEDS"
+        amount: 1
+        chance: 50.0
+        
+  melon:
+    name: "Melon"
+    category: "Advanced"
+    plant-material: "MELON"
+    harvest-material: "MELON"
+    seed-material: "MELON_SEEDS"
+    duration: 5400  # 1.5 hours
+    sustainable: false
+    requirement:
+      level: 10
+      permission: "herbalism.crop.melon"
+    drops:
+      - material: "MELON_SLICE"
+        amount: 3
+        chance: 100.0
+        bonus-amount: 6
+        bonus-chance: 30.0
+      - material: "MELON_SEEDS"
+        amount: 1
+        chance: 20.0
+        
+  pumpkin:
+    name: "Pumpkin"
+    category: "Advanced"
+    plant-material: "PUMPKIN"
+    harvest-material: "PUMPKIN"
+    seed-material: "PUMPKIN_SEEDS"
+    duration: 5400
+    sustainable: false
+    requirement:
+      level: 10
+      permission: "herbalism.crop.pumpkin"
+    drops:
+      - material: "PUMPKIN"
+        amount: 1
+        chance: 100.0
+        bonus-amount: 1
+        bonus-chance: 25.0
+      - material: "PUMPKIN_SEEDS"
+        amount: 1
+        chance: 20.0
+        
+  cocoa:
+    name: "Cocoa"
+    category: "Advanced"
+    plant-material: "COCOA"
+    harvest-material: "COCOA"
+    seed-material: "COCOA_BEANS"
+    duration: 4800  # 1.33 hours
+    sustainable: false
+    requirement:
+      level: 15
+      permission: "herbalism.crop.cocoa"
+    drops:
+      - material: "COCOA_BEANS"
+        amount: 2
+        chance: 100.0
+        bonus-amount: 3
+        bonus-chance: 35.0
+        
+  nether_wart:
+    name: "Nether Wart"
+    category: "Expert"
+    plant-material: "NETHER_WART"
+    harvest-material: "NETHER_WART"
+    seed-material: "NETHER_WART"
+    duration: 7200  # 2 hours
+    sustainable: false
+    requirement:
+      level: 20
+      permission: "herbalism.crop.nether_wart"
+    drops:
+      - material: "NETHER_WART"
+        amount: 2
+        chance: 100.0
+        bonus-amount: 4
+        bonus-chance: 40.0
+        
+  # Sustainable crops (replant automatically after harvest)
+  magic_wheat:
+    name: "Magic Wheat"
+    category: "Magical"
+    plant-material: "WHEAT"
+    harvest-material: "WHEAT"
+    seed-material: "WHEAT_SEEDS"
+    duration: 1800  # 30 minutes
+    sustainable: true
+    requirement:
+      level: 25
+      permission: "herbalism.crop.magic_wheat"
+    drops:
+      - material: "WHEAT"
+        amount: 2
+        chance: 100.0
+        bonus-amount: 4
+        bonus-chance: 50.0
+      - material: "WHEAT_SEEDS"
+        amount: 2
+        chance: 80.0
+        
+  golden_carrot_plant:
+    name: "Golden Carrot Plant"
+    category: "Magical"
+    plant-material: "CARROT"
+    harvest-material: "CARROT"
+    seed-material: "CARROT"
+    duration: 2700  # 45 minutes
+    sustainable: true
+    requirement:
+      level: 30
+      permission: "herbalism.crop.golden_carrot"
+    drops:
+      - material: "GOLDEN_CARROT"
+        amount: 1
+        chance: 100.0
+        bonus-amount: 2
+        bonus-chance: 25.0
+      - material: "CARROT"
+        amount: 1
+        chance: 60.0 

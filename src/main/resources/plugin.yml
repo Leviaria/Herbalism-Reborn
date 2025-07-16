@@ -1,0 +1,48 @@
+name: HerbalismReborn
+version: '${version}'
+main: me.devupdates.herbalism.core.HerbalismPlugin
+api-version: '1.21'
+author: DevUpdates
+description: A modernized farming plugin for Minecraft 1.21.7
+website: https://github.com/devupdates/herbalism-reborn
+
+# softdepend:
+#   - PlaceholderAPI
+
+commands:
+  herbalism:
+    description: Main Herbalism command
+    usage: /<command> [help|about|reload|menu|stats|exp|level|load]
+    aliases: [herbal, farming, farm, plant]
+    permission: herbalism.use
+
+permissions:
+  herbalism.use:
+    description: Basic plugin usage
+    default: true
+  herbalism.admin:
+    description: Administrative access to all commands
+    default: op
+    children:
+      herbalism.command.reload: true
+      herbalism.command.load: true
+      herbalism.command.exp: true
+      herbalism.command.level: true
+  herbalism.command.reload:
+    description: Reload plugin configuration
+    default: op
+  herbalism.command.load:
+    description: Load items from database
+    default: op
+  herbalism.command.exp:
+    description: Modify player experience
+    default: op
+  herbalism.command.level:
+    description: Modify player level
+    default: op
+  herbalism.bypass.limit:
+    description: Bypass plant limits
+    default: op
+  herbalism.bypass.cooldown:
+    description: Bypass fertilizer cooldowns
+    default: op

@@ -1,0 +1,207 @@
+# Abilities Configuration for Herbalism Reborn
+# This file defines all player abilities and their effects
+
+abilities:
+  # Cultivator Ability - Increases planting speed and fertilizer efficiency
+  cultivator:
+    name: "&2Cultivator"
+    description: "Master of soil preparation and planting techniques"
+    lore:
+      - "&7Increases planting speed and"
+      - "&7fertilizer application efficiency"
+      - "&7Unlocks at different herbalism levels"
+    type: PASSIVE
+    passive: true
+    max-level: 5
+    cooldown: 0
+    levels:
+      1:
+        required-level: 10
+        effect-value: 1.15  # 15% faster planting
+        chance: 1.0
+        description: "15% faster planting speed"
+      2:
+        required-level: 25
+        effect-value: 1.30  # 30% faster planting
+        chance: 1.0
+        description: "30% faster planting speed"
+      3:
+        required-level: 40
+        effect-value: 1.50  # 50% faster planting
+        chance: 1.0
+        description: "50% faster planting speed"
+      4:
+        required-level: 60
+        effect-value: 1.75  # 75% faster planting
+        chance: 1.0
+        description: "75% faster planting speed"
+      5:
+        required-level: 80
+        effect-value: 2.0   # 100% faster planting
+        chance: 1.0
+        description: "100% faster planting speed"
+        
+  # Agriculturist Ability - Increases crop yield and harvest efficiency
+  agriculturist:
+    name: "&6Agriculturist"
+    description: "Expert in crop cultivation and harvesting"
+    lore:
+      - "&7Increases crop yield and"
+      - "&7harvest efficiency"
+      - "&7Higher chance for bonus crops"
+    type: PASSIVE
+    passive: true
+    max-level: 5
+    cooldown: 0
+    levels:
+      1:
+        required-level: 15
+        effect-value: 1.25  # 25% more yield
+        chance: 0.15        # 15% chance for bonus crop
+        description: "25% increased yield, 15% bonus crop chance"
+      2:
+        required-level: 30
+        effect-value: 1.50  # 50% more yield
+        chance: 0.25        # 25% chance for bonus crop
+        description: "50% increased yield, 25% bonus crop chance"
+      3:
+        required-level: 45
+        effect-value: 1.75  # 75% more yield
+        chance: 0.35        # 35% chance for bonus crop
+        description: "75% increased yield, 35% bonus crop chance"
+      4:
+        required-level: 65
+        effect-value: 2.0   # 100% more yield
+        chance: 0.50        # 50% chance for bonus crop
+        description: "100% increased yield, 50% bonus crop chance"
+      5:
+        required-level: 85
+        effect-value: 2.5   # 150% more yield
+        chance: 0.65        # 65% chance for bonus crop
+        description: "150% increased yield, 65% bonus crop chance"
+        
+  # Farmer's Luck Ability - Chance for rare seeds and bonus drops
+  farmers_luck:
+    name: "&eFarmer's Luck"
+    description: "Fortune favors the dedicated farmer"
+    lore:
+      - "&7Chance for rare seeds and"
+      - "&7bonus drops during farming"
+      - "&7Increases with higher levels"
+    type: PASSIVE
+    passive: true
+    max-level: 5
+    cooldown: 0
+    levels:
+      1:
+        required-level: 20
+        effect-value: 1.0   # Base luck factor
+        chance: 0.10        # 10% chance for rare drops
+        description: "10% chance for rare seeds and bonus drops"
+      2:
+        required-level: 35
+        effect-value: 1.2   # 20% better luck
+        chance: 0.18        # 18% chance for rare drops
+        description: "18% chance for rare seeds and bonus drops"
+      3:
+        required-level: 50
+        effect-value: 1.5   # 50% better luck
+        chance: 0.25        # 25% chance for rare drops
+        description: "25% chance for rare seeds and bonus drops"
+      4:
+        required-level: 70
+        effect-value: 1.8   # 80% better luck
+        chance: 0.35        # 35% chance for rare drops
+        description: "35% chance for rare seeds and bonus drops"
+      5:
+        required-level: 90
+        effect-value: 2.2   # 120% better luck
+        chance: 0.45        # 45% chance for rare drops
+        description: "45% chance for rare seeds and bonus drops"
+        
+  # Green Thumb Ability - Reduces crop growth time
+  green_thumb:
+    name: "&aGreen Thumb"
+    description: "Natural affinity for plant growth"
+    lore:
+      - "&7Reduces crop growth time"
+      - "&7and increases success rates"
+      - "&7for all farming activities"
+    type: PASSIVE
+    passive: true
+    max-level: 3
+    cooldown: 0
+    levels:
+      1:
+        required-level: 5
+        effect-value: 0.90  # 10% faster growth
+        chance: 1.0
+        description: "10% faster crop growth"
+      2:
+        required-level: 25
+        effect-value: 0.80  # 20% faster growth
+        chance: 1.0
+        description: "20% faster crop growth"
+      3:
+        required-level: 50
+        effect-value: 0.70  # 30% faster growth
+        chance: 1.0
+        description: "30% faster crop growth"
+        
+  # Harvest Master Ability - Chance to not consume fertilizer
+  harvest_master:
+    name: "&dHarvest Master"
+    description: "Master of efficient resource usage"
+    lore:
+      - "&7Chance to not consume fertilizer"
+      - "&7when applying to crops"
+      - "&7Increases plant limit capacity"
+    type: PASSIVE
+    passive: true
+    max-level: 3
+    cooldown: 0
+    levels:
+      1:
+        required-level: 40
+        effect-value: 1.25  # 25% more plant capacity
+        chance: 0.20        # 20% chance to not consume fertilizer
+        description: "25% more plant capacity, 20% fertilizer save chance"
+      2:
+        required-level: 60
+        effect-value: 1.50  # 50% more plant capacity
+        chance: 0.35        # 35% chance to not consume fertilizer
+        description: "50% more plant capacity, 35% fertilizer save chance"
+      3:
+        required-level: 80
+        effect-value: 2.0   # 100% more plant capacity
+        chance: 0.50        # 50% chance to not consume fertilizer
+        description: "100% more plant capacity, 50% fertilizer save chance"
+        
+  # Nature's Blessing Ability - Rare active ability
+  natures_blessing:
+    name: "&bNature's Blessing"
+    description: "Channel the power of nature itself"
+    lore:
+      - "&7Active ability that instantly"
+      - "&7matures all nearby crops"
+      - "&7Long cooldown, powerful effect"
+    type: ACTIVE
+    passive: false
+    max-level: 3
+    cooldown: 1800000  # 30 minutes in milliseconds
+    levels:
+      1:
+        required-level: 50
+        effect-value: 5.0   # 5 block radius
+        chance: 1.0
+        description: "Instantly mature crops in 5 block radius"
+      2:
+        required-level: 70
+        effect-value: 8.0   # 8 block radius
+        chance: 1.0
+        description: "Instantly mature crops in 8 block radius"
+      3:
+        required-level: 90
+        effect-value: 12.0  # 12 block radius
+        chance: 1.0
+        description: "Instantly mature crops in 12 block radius" 

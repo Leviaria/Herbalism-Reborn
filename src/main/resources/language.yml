@@ -1,0 +1,286 @@
+# Herbalism Reborn - Language Configuration
+# All plugin messages and text
+
+messages:
+  # General messages
+  prefix: "&8[&2Herbalism&8] &r"
+  no-permission: "&cYou don't have permission to use this command!"
+  player-only: "&cOnly players can use this command!"
+  invalid-player: "&cPlayer '&e{player}&c' not found!"
+  invalid-number: "&cInvalid number: &e{input}"
+  plugin-reloaded: "&aPlugin configuration reloaded successfully!"
+  
+  # Command messages
+  command:
+    help:
+      header: "&8&l&m=-=-=-=-=-=&r &2&lHerbalism Commands &8&l&m=-=-=-=-=-="
+      footer: "&8&l&m=-=-=-=-=-=&r &2&lHerbalism Commands &8&l&m=-=-=-=-=-="
+      lines:
+        - "&2/herbalism help &8- &fShow this help message"
+        - "&2/herbalism about &8- &fShow plugin information"
+        - "&2/herbalism reload &8- &fReload plugin configuration"
+        - "&2/herbalism menu &8- &fOpen the main menu"
+        - "&2/herbalism stats [player] &8- &fShow herbalism statistics"
+        - "&2/herbalism exp <set|add|take> <amount> [player] &8- &fModify experience"
+        - "&2/herbalism level <set|add|take> <amount> [player] &8- &fModify level"
+        - "&2/herbalism load <type> <item> [amount] [player] &8- &fGive items"
+        
+    load:
+      usage: "&cUsage: /herbalism load <item|fertilizer|crop> <id> [amount] [player]"
+      invalid-type: "&cInvalid type '&e{type}&c'. Use: item, fertilizer, or crop"
+      success: "&aGave &e{amount}x {item} &ato &e{player}&a!"
+      received: "&aYou received &e{amount}x {item}&a!"
+      item-not-found: "&cItem '&e{item}&c' not found!"
+      fertilizer-not-found: "&cFertilizer '&e{item}&c' not found!"
+      crop-not-found: "&cCrop '&e{item}&c' not found!"
+        
+    about:
+      header: "&8&l&m=-=-=-=-=-=&r &2&lHerbalism Reborn &8&l&m=-=-=-=-=-="
+      footer: "&8&l&m=-=-=-=-=-=&r &2&lHerbalism Reborn &8&l&m=-=-=-=-=-="
+      lines:
+        - "&2Plugin: &fHerbalism Reborn"
+        - "&2Version: &f{version}"
+        - "&2Author: &fDevUpdates"
+        - "&2Description: &fA modern farming plugin"
+        - "&2Minecraft Version: &f1.21.7"
+        
+    stats:
+      header: "&8&l&m=-=-=-=-=-=&r &2&lHerbalism Stats &8&l&m=-=-=-=-=-="
+      footer: "&8&l&m=-=-=-=-=-=&r &2&lHerbalism Stats &8&l&m=-=-=-=-=-="
+      lines:
+        - "&2Player: &f{player}"
+        - "&2Level: &f{level}&7/&f{max_level}"
+        - "&2Experience: &f{exp}&7/&f{exp_required}"
+        - "&2Total Plants: &f{plants}&7/&f{max_plants}"
+        - "&2Active Crops: &f{active_crops}"
+        - "&2Harvests: &f{harvests}"
+        - "&2Fertilizers Used: &f{fertilizers_used}"
+        
+    exp:
+      set-sender: "&aSet experience of &e{player} &ato &e{amount}"
+      set-target: "&aYour experience has been set to &e{amount}"
+      add-sender: "&aAdded &e{amount} &aexperience to &e{player}"
+      add-target: "&aYou gained &e{amount} &aexperience!"
+      take-sender: "&aRemoved &e{amount} &aexperience from &e{player}"
+      take-target: "&cYou lost &e{amount} &cexperience!"
+      
+    level:
+      set-sender: "&aSet level of &e{player} &ato &e{level}"
+      set-target: "&aYour level has been set to &e{level}"
+      add-sender: "&aAdded &e{level} &alevels to &e{player}"
+      add-target: "&aYou gained &e{level} &alevels!"
+      take-sender: "&aRemoved &e{level} &alevels from &e{player}"
+      take-target: "&cYou lost &e{level} &clevels!"
+      
+    load:
+      usage: "&cUsage: /herbalism load <item|fertilizer|crop> <id> [amount] [player]"
+      invalid-type: "&cInvalid type '&e{type}&c'. Use: item, fertilizer, or crop"
+      success: "&aGave &e{amount}x {item} &ato &e{player}&a!"
+      received: "&aYou received &e{amount}x {item}&a!"
+      item-not-found: "&cItem '&e{item}&c' not found!"
+      fertilizer-not-found: "&cFertilizer '&e{item}&c' not found!"
+      crop-not-found: "&cCrop '&e{item}&c' not found!"
+      
+  # Crop system messages
+  crops:
+    planted: "&aSuccessfully planted &e{crop_name}&a!"
+    plant-failed: "&cFailed to plant crop!"
+    plant-no-permission: "&cYou don't have permission to plant this crop!"
+    plant-level-required: "&cYou need level &e{level} &cto plant this crop!"
+    plant-limit-reached: "&cYou have reached your plant limit (&e{limit}&c)!"
+    plant-not-allowed: "&cYou cannot plant this crop here!"
+    plant-already-exists: "&cThere is already a crop planted here!"
+    
+    harvested: "&aHarvested &e{crop_name} &aand received:"
+    harvest-failed: "&cFailed to harvest crop!"
+    harvest-not-ready: "&cThis crop is not ready for harvest yet!"
+    harvest-not-owner: "&cYou don't own this crop!"
+    harvest-time-left: "&eThis crop will be ready in &f{time}"
+    
+    broken: "&cYour &e{crop_name} &cwas broken!"
+    broken-not-owner: "&cYou cannot break this crop - it belongs to &e{owner}&c!"
+    
+    decayed: "&cYour &e{crop_name} &chas decayed!"
+    decay-warning: "&eYour &f{crop_name} &ewill decay in &f{time}&e!"
+    
+    fertilized: "&aFertilized &e{crop_name} &awith &e{fertilizer_name}&a!"
+    fertilize-failed: "&cFailed to fertilize crop!"
+    fertilize-not-owner: "&cYou don't own this crop!"
+    fertilize-already-used: "&cYou have already used this fertilizer on this crop!"
+    fertilize-level-required: "&cYou need level &e{level} &cto use this fertilizer!"
+    fertilize-cooldown: "&cYou must wait &e{time} &cbefore using this fertilizer again!"
+    catalog-info: "&7Crop information for &e{crop_name}&7. Check requirements and plan your farm!"
+    teleported: "&aTeleported to your &e{crop_name}&a crop!"
+    
+  # Fertilizer messages
+  fertilizer:
+    applied: "&aSuccessfully applied &e{fertilizer} &ato your &e{crop} &acrop!"
+    failed: "&cFertilizer application failed! Try again."
+    level-required: "&cYou need level &e{level} &cto use this fertilizer!"
+    already-harvested: "&cThis crop has already been harvested!"
+    already-ready: "&cThis crop is already ready for harvest!"
+    not-owner: "&cYou can only fertilize your own crops!"
+    already-fertilized: "&cThis crop is already fertilized!"
+    
+  # Ability messages
+  abilities:
+    unlocked: "&aUnlocked ability: &e{ability_name}"
+    level-up: "&aAbility &e{ability_name} &aleveled up to &e{level}&a!"
+    max-level: "&cAbility &e{ability_name} &cis already at max level!"
+    
+  # Level up messages
+  level-up:
+    title: "&2&lLevel Up!"
+    subtitle: "&aYou reached level &e{level}"
+    message: "&aCongratulations! You reached level &e{level}&a!"
+    
+  # GUI messages
+  gui:
+    main-menu:
+      title: "&2Herbalism Menu"
+      
+    player-stats:
+      title: "&2Player Statistics"
+      
+    crop-info:
+      title: "&2Crop Information"
+      
+    abilities:
+      title: "&2Abilities"
+      
+    # Button names and descriptions
+    buttons:
+      player-stats:
+        name: "&aPlayer Statistics"
+        lore:
+          - "&7View your herbalism progress"
+          - "&7and statistics."
+          
+      crop-info:
+        name: "&eCrop Information"
+        lore:
+          - "&7View information about"
+          - "&7available crops."
+          
+      abilities:
+        name: "&dAbilities"
+        lore:
+          - "&7View and manage your"
+          - "&7herbalism abilities."
+          
+      fertilizers:
+        name: "&bFertilizers"
+        lore:
+          - "&7View available fertilizers"
+          - "&7and their effects."
+          
+      close:
+        name: "&cClose"
+        lore:
+          - "&7Close this menu"
+          
+      back:
+        name: "&eBack"
+        lore:
+          - "&7Go back to previous menu"
+          
+      next-page:
+        name: "&aNext Page"
+        lore:
+          - "&7Go to next page"
+          
+      previous-page:
+        name: "&ePrevious Page"
+        lore:
+          - "&7Go to previous page"
+          
+  # Hologram messages
+  hologram:
+    crop-growing:
+      - "&e{crop_name}"
+      - "&aOwner: &f{owner}"
+      - "&eTime left: &f{time_left}"
+      - "&7Progress: {progress_bar}"
+      
+    crop-ready:
+      - "&e{crop_name}"
+      - "&aOwner: &f{owner}"
+      - "&a&lREADY FOR HARVEST!"
+      - "&7Will decay in: &f{decay_time}"
+      
+  # Action bar messages
+  actionbar:
+    crop-growing: "&eCrop: &f{crop_name} &8| &eTime left: &f{time_left}"
+    crop-ready: "&eCrop: &f{crop_name} &8| &a&lREADY FOR HARVEST!"
+    
+  # Boss bar messages
+  bossbar:
+    crop-growing: "&eCrop: {crop_name} - Growing"
+    crop-ready: "&aCrop: {crop_name} - Ready!"
+    
+  # Placeholder messages
+  placeholders:
+    level: "{level}"
+    experience: "{exp}"
+    experience-required: "{exp_required}"
+    plants: "{plants}"
+    max-plants: "{max_plants}"
+    active-crops: "{active_crops}"
+    harvests: "{harvests}"
+    fertilizers-used: "{fertilizers_used}"
+    
+  # Error messages
+  errors:
+    database-error: "&cDatabase error occurred! Please contact an administrator."
+    config-error: "&cConfiguration error: {error}"
+    unknown-error: "&cAn unknown error occurred!"
+    
+  # Time format
+  time:
+    seconds: "{time}s"
+    minutes: "{time}m"
+    hours: "{time}h"
+    days: "{time}d"
+    format: "{days}d {hours}h {minutes}m {seconds}s"
+    
+  # Progress bar
+  progress:
+    bar-completed: "&a█"
+    bar-remaining: "&7█"
+    bar-length: 10
+    
+  # GUI messages
+  gui:
+    cooldown: "&cPlease wait before opening another menu!"
+    error: "&cAn error occurred while opening the menu!"
+    
+  # Crop system messages
+  crops:
+    planted: "&aSuccessfully planted &e{crop_name}&a!"
+    plant-failed: "&cFailed to plant crop!"
+    plant-no-permission: "&cYou don't have permission to plant this crop!"
+    plant-level-required: "&cYou need level &e{level} &cto plant this crop!"
+    plant-limit-reached: "&cYou have reached your plant limit (&e{limit}&c)!"
+    plant-not-allowed: "&cYou cannot plant this crop here!"
+    plant-already-exists: "&cThere is already a crop planted here!"
+    
+    harvested: "&aHarvested &e{crop_name} &aand received:"
+    harvest-failed: "&cFailed to harvest crop!"
+    harvest-not-ready: "&cThis crop is not ready for harvest yet!"
+    harvest-not-owner: "&cYou don't own this crop!"
+    harvest-time-left: "&eThis crop will be ready in &f{time}"
+    
+    broken: "&cYour &e{crop_name} &cwas broken!"
+    broken-not-owner: "&cYou cannot break this crop - it belongs to &e{owner}&c!"
+    
+    decayed: "&cYour &e{crop_name} &chas decayed!"
+    decay-warning: "&eYour &f{crop_name} &ewill decay in &f{time}&e!"
+    
+    fertilized: "&aFertilized &e{crop_name} &awith &e{fertilizer_name}&a!"
+    fertilize-failed: "&cFailed to fertilize crop!"
+    fertilize-not-owner: "&cYou don't own this crop!"
+    fertilize-already-used: "&cYou have already used this fertilizer on this crop!"
+    fertilize-level-required: "&cYou need level &e{level} &cto use this fertilizer!"
+    fertilize-cooldown: "&cYou must wait &e{time} &cbefore using this fertilizer again!"
+    catalog-info: "&7Crop information for &e{crop_name}&7. Check requirements and plan your farm!"
+    teleported: "&aTeleported to your &e{crop_name}&a crop!"

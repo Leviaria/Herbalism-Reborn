@@ -1,0 +1,168 @@
+# Fertilizer Configuration for Herbalism Reborn
+# This file defines all available fertilizers and their properties
+
+fertilizers:
+  # Basic Fertilizers
+  bone_meal:
+    name: "&7Bone Meal"
+    material: BONE_MEAL
+    lore:
+      - "&7Basic fertilizer that slightly"
+      - "&7accelerates crop growth"
+      - "&8Duration: 5 minutes"
+      - "&8Growth: +50%"
+    growth-multiplier: 1.5
+    duration: 300
+    success-chance: 0.95
+    required-level: 1
+    experience-gain: 5
+    permanent: false
+    stack-size: 64
+    
+  compost:
+    name: "&6Compost"
+    material: DIRT
+    lore:
+      - "&6Organic fertilizer that improves"
+      - "&6soil quality and growth speed"
+      - "&8Duration: 10 minutes"
+      - "&8Growth: +100%"
+    growth-multiplier: 2.0
+    duration: 600
+    success-chance: 0.90
+    required-level: 5
+    experience-gain: 10
+    permanent: false
+    stack-size: 32
+    
+  # Intermediate Fertilizers
+  magical_powder:
+    name: "&dMagical Powder"
+    material: GLOWSTONE_DUST
+    lore:
+      - "&dEnchanted powder that significantly"
+      - "&dboosts crop growth with magic"
+      - "&8Duration: 15 minutes"
+      - "&8Growth: +150%"
+    growth-multiplier: 2.5
+    duration: 900
+    success-chance: 0.85
+    required-level: 15
+    experience-gain: 20
+    permanent: false
+    stack-size: 16
+    
+  fertile_soil:
+    name: "&2Fertile Soil"
+    material: COARSE_DIRT
+    lore:
+      - "&2Premium soil mixture that"
+      - "&2doubles crop growth rate"
+      - "&8Duration: 20 minutes"
+      - "&8Growth: +200%"
+    growth-multiplier: 3.0
+    duration: 1200
+    success-chance: 0.80
+    required-level: 25
+    experience-gain: 30
+    permanent: false
+    stack-size: 16
+    
+  # Advanced Fertilizers
+  growth_catalyst:
+    name: "&9Growth Catalyst"
+    material: NETHER_STAR
+    lore:
+      - "&9Rare catalyst that massively"
+      - "&9accelerates plant development"
+      - "&8Duration: 30 minutes"
+      - "&8Growth: +300%"
+    growth-multiplier: 4.0
+    duration: 1800
+    success-chance: 0.75
+    required-level: 40
+    experience-gain: 50
+    permanent: false
+    stack-size: 8
+    
+  nature_blessing:
+    name: "&aNature's Blessing"
+    material: EMERALD
+    lore:
+      - "&aDivine blessing that grants"
+      - "&amassive growth acceleration"
+      - "&8Duration: 45 minutes"
+      - "&8Growth: +400%"
+    growth-multiplier: 5.0
+    duration: 2700
+    success-chance: 0.70
+    required-level: 60
+    experience-gain: 75
+    permanent: false
+    stack-size: 4
+    
+  # Legendary Fertilizers
+  time_shard:
+    name: "&cTime Shard"
+    material: DRAGON_EGG
+    lore:
+      - "&cLegendary shard that manipulates"
+      - "&ctime itself around crops"
+      - "&8Duration: 60 minutes"
+      - "&8Growth: +500%"
+    growth-multiplier: 6.0
+    duration: 3600
+    success-chance: 0.60
+    required-level: 80
+    experience-gain: 100
+    permanent: false
+    stack-size: 2
+    
+  eternal_fertilizer:
+    name: "&bEternal Fertilizer"
+    material: BEACON
+    lore:
+      - "&bMythical fertilizer that grants"
+      - "&bpermanent growth acceleration"
+      - "&8Duration: Permanent"
+      - "&8Growth: +250%"
+    growth-multiplier: 3.5
+    duration: 0
+    success-chance: 0.50
+    required-level: 100
+    experience-gain: 200
+    permanent: true
+    stack-size: 1
+    
+  # Special Fertilizers
+  moon_dust:
+    name: "&fMoon Dust"
+    material: SUGAR
+    lore:
+      - "&fCelestial dust that works best"
+      - "&funder the moonlight"
+      - "&8Duration: 25 minutes"
+      - "&8Growth: +180%"
+    growth-multiplier: 2.8
+    duration: 1500
+    success-chance: 0.85
+    required-level: 30
+    experience-gain: 35
+    permanent: false
+    stack-size: 12
+    
+  phoenix_ash:
+    name: "&4Phoenix Ash"
+    material: BLAZE_POWDER
+    lore:
+      - "&4Legendary ash from the phoenix"
+      - "&4that grants rebirth to crops"
+      - "&8Duration: 40 minutes"
+      - "&8Growth: +350%"
+    growth-multiplier: 4.5
+    duration: 2400
+    success-chance: 0.65
+    required-level: 70
+    experience-gain: 85
+    permanent: false
+    stack-size: 6 

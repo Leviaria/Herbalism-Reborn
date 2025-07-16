@@ -1,0 +1,61 @@
+# Herbalism Reborn Configuration
+# Version: 1.21.7
+
+# Plugin Settings
+locale: "en"
+debug: true
+
+# Database Configuration
+database:
+  type: "SQLite"  # SQLite or MySQL
+  host: "localhost"
+  port: 3306
+  name: "herbalism"
+  username: "root"
+  password: ""
+  save-interval: 300  # Save interval in seconds
+
+# Herbalism System Settings
+herbalism:
+  max-level: 100
+  max-total-plants: 100
+  base-total-plants: 40
+  # Experience formula: (a * level^2) + (b * level) + c
+  formula-exp-a: 1.0
+  formula-exp-b: 40.0
+  formula-exp-c: 400.0
+
+# Crop System Settings
+crops:
+  update-interval: 20  # Update interval in ticks (20 ticks = 1 second)
+  decay-multiplier: 2.0  # Multiplier for crop decay time after harvest
+  
+# Hologram Settings
+hologram:
+  enabled: true
+  range: 10  # Range in blocks to show holograms
+  duration: 5  # Duration in seconds to show holograms
+
+# GUI Settings
+gui:
+  enabled: true
+  update-interval: 20  # Update interval in ticks
+
+# Effects Settings
+effects:
+  particles: true
+  sounds: true
+  range: 50  # Range in blocks for effects
+
+# Messages
+messages:
+  prefix: "&8[&2Herbalism&8] &r"
+  
+# PlaceholderAPI Integration - REMOVED
+# placeholderapi:
+#   enabled: true
+  
+# Metrics
+metrics:
+  enabled: true
+  message: true 

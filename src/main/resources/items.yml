@@ -1,0 +1,184 @@
+# Herbalism Reborn - Items Configuration
+# Defines custom items that can be given to players
+
+items:
+  # Special seeds for magical crops
+  magic_wheat_seeds:
+    name: "&dMagic Wheat Seeds"
+    material: "WHEAT_SEEDS"
+    lore:
+      - "&7Magical seeds that grow into"
+      - "&7enchanted wheat."
+      - ""
+      - "&eRequires level 25 to plant"
+    enchanted: true
+    custom-model-data: 1001
+    
+  golden_carrot_seeds:
+    name: "&6Golden Carrot Seeds"
+    material: "CARROT"
+    lore:
+      - "&7Rare seeds that produce"
+      - "&7golden carrots."
+      - ""
+      - "&eRequires level 30 to plant"
+    enchanted: true
+    custom-model-data: 1002
+    
+  # Special tools
+  farmers_hoe:
+    name: "&2Farmer's Hoe"
+    material: "IRON_HOE"
+    lore:
+      - "&7A special hoe blessed by"
+      - "&7the farming gods."
+      - ""
+      - "&eAbility: &fRight-click to check"
+      - "&fcrop growth status"
+    enchanted: true
+    custom-model-data: 2001
+    
+  herbalists_staff:
+    name: "&5Herbalist's Staff"
+    material: "BLAZE_ROD"
+    lore:
+      - "&7An ancient staff that channels"
+      - "&7the power of nature."
+      - ""
+      - "&eAbility: &fRight-click to fertilize"
+      - "&fall crops in a 5x5 area"
+    enchanted: true
+    custom-model-data: 2002
+    
+  # Information items
+  crop_guide:
+    name: "&aCrop Growing Guide"
+    material: "BOOK"
+    lore:
+      - "&7A comprehensive guide to"
+      - "&7growing crops efficiently."
+      - ""
+      - "&eRight-click to open guide"
+    custom-model-data: 3001
+    
+  herbalism_handbook:
+    name: "&6Herbalism Handbook"
+    material: "ENCHANTED_BOOK"
+    lore:
+      - "&7The ultimate guide to"
+      - "&7herbalism and farming."
+      - ""
+      - "&eContains all crop, fertilizer,"
+      - "&eand ability information"
+    enchanted: true
+    custom-model-data: 3002
+    
+  # Utility items
+  soil_tester:
+    name: "&bSoil Tester"
+    material: "STICK"
+    lore:
+      - "&7A device that analyzes"
+      - "&7soil conditions."
+      - ""
+      - "&eRight-click on farmland to"
+      - "&echeck soil quality"
+    custom-model-data: 4001
+    
+  growth_detector:
+    name: "&eGrowth Detector"
+    material: "COMPASS"
+    lore:
+      - "&7Points to the nearest"
+      - "&7fully grown crop."
+      - ""
+      - "&eHold to detect mature crops"
+    custom-model-data: 4002
+    
+  # Rare items
+  time_crystal:
+    name: "&dTime Crystal"
+    material: "AMETHYST_SHARD"
+    lore:
+      - "&d&lRARE ITEM"
+      - "&7A crystal that manipulates"
+      - "&7the flow of time."
+      - ""
+      - "&eUsed to craft time-based"
+      - "&efertilizers and items"
+    enchanted: true
+    custom-model-data: 5001
+    
+  essence_of_growth:
+    name: "&aEssence of Growth"
+    material: "SLIME_BALL"
+    lore:
+      - "&a&lUNCOMMON ITEM"
+      - "&7Concentrated essence that"
+      - "&7promotes plant growth."
+      - ""
+      - "&eUsed to craft advanced"
+      - "&efertilizers"
+    custom-model-data: 5002
+    
+  harvest_blessing:
+    name: "&6Harvest Blessing"
+    material: "GOLDEN_APPLE"
+    lore:
+      - "&6&lLEGENDARY ITEM"
+      - "&7A divine blessing that"
+      - "&7guarantees bountiful harvests."
+      - ""
+      - "&eConsume to gain 2x drops"
+      - "&efor 10 minutes"
+    enchanted: true
+    custom-model-data: 5003
+    
+  # Decorative items
+  crop_trophy:
+    name: "&6Crop Master Trophy"
+    material: "GOLDEN_APPLE"
+    lore:
+      - "&6&lTROPHY"
+      - "&7Awarded to masters of"
+      - "&7herbalism and farming."
+      - ""
+      - "&eDecorativeItem - Place"
+      - "&ein your base to show off!"
+    enchanted: true
+    custom-model-data: 6001
+    
+  farming_certificate:
+    name: "&eFarming Certificate"
+    material: "PAPER"
+    lore:
+      - "&7Official certification of"
+      - "&7farming expertise."
+      - ""
+      - "&eLevel: &f{level}"
+      - "&eIssued by: &fHerbalism Guild"
+    custom-model-data: 6002
+    
+  # Consumable items
+  energy_drink:
+    name: "&bEnergy Drink"
+    material: "POTION"
+    lore:
+      - "&7A refreshing drink that"
+      - "&7boosts farming efficiency."
+      - ""
+      - "&eEffect: &f+50% XP gain"
+      - "&efor 5 minutes"
+    potion-color: "CYAN"
+    custom-model-data: 7001
+    
+  fertilizer_pouch:
+    name: "&eFertilizer Pouch"
+    material: "LEATHER"
+    lore:
+      - "&7A pouch containing"
+      - "&7various fertilizers."
+      - ""
+      - "&eRight-click to receive"
+      - "&erandom fertilizers"
+    custom-model-data: 7002 
